@@ -12,11 +12,13 @@ describe "creating exercise" do
 		click_link "My Lounge"
 		click_link "New Workout"
 
-		expect(page).to have_link("Cacnel")
+		expect(page).to have_link("Cancel")
 
 		fill_in "Duration", with: "60"
 		fill_in "Workout Details", with: "Running"
 		fill_in "Date", with: "2017-01-15"
+
+		click_button "Create Exercise"
 
 		expect(page).to have_content("Exercise has been created.")
 		exercise = Exercise.last
