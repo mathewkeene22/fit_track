@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'jquery-ui-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
