@@ -26,7 +26,7 @@ describe "creating exercise" do
 	end
 
 	scenario "with invalid inputs" do
-		vist "/"
+		visit "/"
 
 		click_link "My Lounge"
 		click_link "New Workout"
